@@ -1,0 +1,60 @@
+{
+  "name": "@its-bede/stimulus-onboarding",
+  "version": "0.1.0",
+  "description": "A Stimulus controller for creating guided onboarding tours in Rails applications",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --outfile=dist/index.js --platform=browser --target=es2015",
+    "prepare": "npm run build",
+    "format": "prettier-standard  '**/*.{ts,css,html}' --format",
+    "lint": "prettier-standard  '**/*.{ts,css,html}' --lint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/its-bede/stimulus-onboarding.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "keywords": [
+    "stimulus",
+    "hotwire",
+    "rails",
+    "onboarding",
+    "tour"
+  ],
+  "author": "Benjamin Deutscher <ben@bdeutscher.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/its-bede/stimulus-onboarding/issues"
+  },
+  "homepage": "https://github.com/its-bede/stimulus-onboarding#readme",
+  "peerDependencies": {
+    "@hotwired/stimulus": "^3.0.0",
+    "bootstrap": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.9",
+    "@babel/preset-env": "^7.25.9",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@testing-library/dom": "^9.3.4",
+    "@testing-library/jest-dom": "^6.6.2",
+    "@testing-library/user-event": "^14.5.2",
+    "babel-jest": "^29.7.0",
+    "esbuild": "^0.19.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "semantic-release": "^22.0.12"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ]
+}

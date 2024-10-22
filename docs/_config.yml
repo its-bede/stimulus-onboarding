@@ -1,0 +1,10 @@
+remote_theme: just-the-docs/just-the-docs
+title: Stimulus Onboarding
+description: Documentation for the Stimulus Onboarding controller
+search_enabled: true
+
+nav_external_links:
+  - title: GitHub Repository
+    url: https://github.com/its-bede/stimulus-onboarding
+    hide_icon: false
+    opens_in_new_tab: true
